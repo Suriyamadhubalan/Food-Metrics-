@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyse</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH' crossorigin='anonymous'>
+</head>
+<body>
+
+<!-- -------------- header -----------------    -->
+
+    <header>
+      <nav class="navbar">
+        <a href="#" class="logo">
+          <img src="images/Food_Metrics_Logo_FM_V2-removebg-preview.png" alt="Logo">
+        </a>
+        <ul class="nav-links">
+          <li><a href="/home2.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+<!-- ----------- outer box  and search box-----------  -->
+
+    <div class="outer-box">
+      <div class="top-box container text-center">
+        <h2>Enter The Name Here</h2>
+        <input type="text" id="name" placeholder="eg: 1 orange">
+        <button id="analyseBtn" onclick="getNutritionData()">Analyse </button><br>
+        <span id="error-msg"></span>
+      </div>
+
+<!-- ---------------- name box ---------------  -->
+
+      <div id="Name-box" class="Name-box container text-center">
+        <table>
+          <tr>
+            <td><b>Qty</b></td>
+            <td><b>Unit</b></td>
+            <td><b>Food</b></td>
+            <td><b>Calories</b></td>
+            <td><b>Weight</b></td>
+          </tr>
+          <tr>
+            <td><span id="Qty"></span></td>
+            <td><span id="Unit"></span></td>
+            <td><span id="Food"></span></td>
+            <td><span id="Kcal"></span> kcal</td>
+            <td><span id="Weight"></span> g</td>
+          </tr>
+        </table>
+      </div>
+
+<!-- -------------- nutrition box ----------------  -->
+
+      <div id="nutrition-box" class="nutrition-box container text-center col-xl-4 col-lg-5 col-md-6 col-sm-8">
+          <h2>Nutrition Facts</h2>
+          <h4>Amount Per Serving</h4>
+          <table>
+            <div id="calories"><p>Calories</p><p id="calorie">0</p></div>
+            <p><b>% Daily Value*</b></p>
+            <tr>
+              <td><b>Total Fat</b></td>
+              <td><span id="Total-fat"></span> g</td>
+              <td><b><span id="Total-fat-percent"></span>%</b></td>
+            </tr>
+            <tr>
+              <td class="secondary">Saturated Fat</td>
+              <td><span id="Saturated-fat"></span> g</td>
+              <td><b><span id="Saturated-fat-percent"></span>%</b></td>
+            </tr>
+            <tr>
+              <td class="secondary">Trans Fat</td>
+              <td><span id="Trans-fat"></span> g</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><b>Cholesterol</b></td>
+              <td><span id="Cholesterol"></span> mg</td>
+              <td><b><span id="Cholesterol-percent"></span>%</b></td>
+            </tr>
+            <tr>
+              <td><b>Sodium</b></td>
+              <td><span id="Sodium"></span> mg</td>
+              <td><b><span id="Sodium-percent"></span>%</b></td>
+            </tr>
+            <tr>
+              <td><b>Total Carbohydrates</b></td>
+              <td><span id="Total-carbohydrates"></span> g</td>
+              <td><b><span id="Total-carbohydrates-percent"></span>%</b></td>
+            </tr>
+            <tr>
+              <td class="secondary">Dietary Fiber</td>
+              <td><span id="Dietary-fiber"></span> g</td>
+              <td><b><span id="Dietary-fiber-percent"></span>%</b></td>
+            </tr>
+            <tr>
+              <td class="secondary">Total Sugars</td>
+              <td><span id="Sugars"></span> g</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><b>Protein</b></td>
+              <td><span id="Protein"></span> g</td>
+              <td><b><span id="Protein-percent"></span>%</b></td>
+            </tr>
+            <tr>
+              <td class="secondary">Vitamin D</td>
+              <td><span id="Vitamin-D"></span> ug</td>
+              <td><b><span id="Vitamin-D-percent"></span>%</b></td>
+            </tr>
+            <tr>
+              <td class="secondary">Calcium</td>
+              <td><span id="Calcium"></span> mg</td>
+              <td><b><span id="Calcium-percent"></span>%</b></td>
+            </tr>
+            <tr>
+              <td class="secondary">Iron</td>
+              <td><span id="Iron"></span> mg</td>
+              <td><b><span id="Iron-percent"></span>%</b></td>
+            </tr>
+            <tr>
+              <td class="secondary">Potassium</td>
+              <td><span id="Potassium"></span> g</td>
+              <td><b><span id="Potassium-percent"></span>%</b></td>
+            </tr>
+          </table>
+      </div>
+    </div>
+
+      <script src="script.js"></script>
+      <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js'
+        integrity='sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz'
+        crossorigin='anonymous'></script>
+</body>
+</html>

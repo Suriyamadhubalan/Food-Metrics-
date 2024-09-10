@@ -1,0 +1,82 @@
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/background-fruit-vegetables-cuts-hd-wallpaper-preview.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.center-box {
+    display: flex;
+    gap: 40px;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    height: 50%;
+    width: 50%;
+    padding: 20px;
+    /* border: 1px solid #ddd; */
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+
+.title-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.title-box img{
+    height: 100%;
+}
+
+.button-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.button {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(79, 189, 28, 0.795);
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.button:hover {
+    background-color: rgba(79, 189, 28, 0.966);
+}
+
+@media only screen and (max-width: 600px){
+    .center-box{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+    .title-box{
+        width: 100%;
+    }
+    .center-box{
+        left: 50%;
+    }
+    .button-box{
+        margin-top: -30%;
+    }
+}
